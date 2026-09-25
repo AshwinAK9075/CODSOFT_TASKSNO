@@ -1,0 +1,21 @@
+### List students
+GET http://localhost:3000/api/v1/students
+
+### Create a student
+POST http://localhost:3000/api/v1/students
+Content-Type: application/json
+
+{
+  "rollNumber": "4MT22CS099",
+  "firstName": "Nikhil",
+  "lastName": "Rai",
+  "email": "nikhil.rai@example.edu",
+  "department": "Computer Science",
+  "dateOfBirth": "2004-05-14"
+}
+
+### Enroll them in CS201
+POST http://localhost:3000/api/v1/enrollments
+Content-Type: application/json
+
+{ "studentId": 6, "courseId": 2, "semester": "2025-ODD" }
